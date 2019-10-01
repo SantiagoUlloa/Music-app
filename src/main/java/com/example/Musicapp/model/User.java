@@ -1,8 +1,5 @@
-package com.example.Musicapp.models;
+package com.example.Musicapp.model;
 
-import com.example.Musicapp.models.Song;
-import com.example.Musicapp.models.UserProfile;
-import com.example.Musicapp.models.UserRole;
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 

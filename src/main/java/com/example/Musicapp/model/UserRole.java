@@ -1,4 +1,4 @@
-package com.example.Musicapp.models;
+package com.example.Musicapp.model;
 
 
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;

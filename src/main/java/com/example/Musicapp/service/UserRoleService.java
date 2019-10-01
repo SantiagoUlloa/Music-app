@@ -1,6 +1,6 @@
 package com.example.Musicapp.service;
 
-import com.example.Musicapp.models.UserRole;
+import com.example.Musicapp.model.UserRole;
 
 public interface UserRoleService {
 

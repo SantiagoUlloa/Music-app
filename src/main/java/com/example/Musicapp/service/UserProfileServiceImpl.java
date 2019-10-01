@@ -1,7 +1,7 @@
 package com.example.Musicapp.service;
 
-import com.example.Musicapp.models.User;
-import com.example.Musicapp.models.UserProfile;
+import com.example.Musicapp.model.User;
+import com.example.Musicapp.model.UserProfile;
 import com.example.Musicapp.repository.UserProfileRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

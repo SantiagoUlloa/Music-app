@@ -1,10 +1,8 @@
 package com.example.Musicapp.repository;
 
-import com.example.Musicapp.models.UserProfile;
+import com.example.Musicapp.model.UserProfile;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
-
-import java.util.List;
 
 public interface UserProfileRepository extends CrudRepository<UserProfile, Long> {
 

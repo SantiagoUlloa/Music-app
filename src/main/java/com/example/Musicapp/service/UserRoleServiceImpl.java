@@ -1,6 +1,6 @@
 package com.example.Musicapp.service;
 
-import com.example.Musicapp.models.UserRole;
+import com.example.Musicapp.model.UserRole;
 import com.example.Musicapp.repository.UserRoleRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

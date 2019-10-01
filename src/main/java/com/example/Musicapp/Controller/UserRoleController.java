@@ -1,10 +1,6 @@
 package com.example.Musicapp.Controller;
 
-import javax.persistence.*;
-
-import java.util.List;
-
-import com.example.Musicapp.models.UserRole;
+import com.example.Musicapp.model.UserRole;
 import com.example.Musicapp.service.UserRoleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

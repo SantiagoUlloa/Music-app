@@ -1,9 +1,8 @@
 package com.example.Musicapp.Controller;
 
-import com.example.Musicapp.models.Song;
+import com.example.Musicapp.model.Song;
 import com.example.Musicapp.service.SongService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 @RestController

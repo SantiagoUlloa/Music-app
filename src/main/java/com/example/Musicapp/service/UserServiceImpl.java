@@ -1,9 +1,9 @@
 package com.example.Musicapp.service;
 
 import com.example.Musicapp.config.JwtUtil;
-import com.example.Musicapp.models.Song;
-import com.example.Musicapp.models.User;
-import com.example.Musicapp.models.UserRole;
+import com.example.Musicapp.model.Song;
+import com.example.Musicapp.model.User;
+import com.example.Musicapp.model.UserRole;
 import com.example.Musicapp.repository.SongRepository;
 import com.example.Musicapp.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;

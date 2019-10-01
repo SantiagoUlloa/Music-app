@@ -1,7 +1,7 @@
 package com.example.Musicapp.service;
 
 
-import com.example.Musicapp.models.UserProfile;
+import com.example.Musicapp.model.UserProfile;
 
 public interface UserProfileService {
 

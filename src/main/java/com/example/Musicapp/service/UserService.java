@@ -1,6 +1,6 @@
 package com.example.Musicapp.service;
 
-import com.example.Musicapp.models.User;
+import com.example.Musicapp.model.User;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.core.userdetails.UserDetailsService;
 

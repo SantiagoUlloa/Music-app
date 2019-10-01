@@ -1,14 +1,12 @@
 package com.example.Musicapp.Controller;
 
-import com.example.Musicapp.config.JwtUtil;
-import com.example.Musicapp.models.JwtResponse;
-import com.example.Musicapp.models.User;
+import com.example.Musicapp.model.JwtResponse;
+import com.example.Musicapp.model.User;
 import com.example.Musicapp.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
-import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.web.bind.annotation.*;
 
 @RestController

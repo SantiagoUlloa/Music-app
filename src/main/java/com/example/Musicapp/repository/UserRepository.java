@@ -1,6 +1,6 @@
 package com.example.Musicapp.repository;
 
-import com.example.Musicapp.models.User;
+import com.example.Musicapp.model.User;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 
