@@ -76,7 +76,13 @@ public class UserControllerTest {
 //    }
 
     private static String createUserInJson (String name, String password) {
+        return "{ \"username\": \"" + name + "\", " +
+                "\"password\":\"" + password+"\"}";
+    }
+
+    private static String createUserwithRoleInJson (String name, String password, String role) {
         return "{ \"name\": \"" + name + "\", " +
-                "\"password\":\"" + password + "\"}";
+                "\"password\":\"" + password +
+                "\"userRole\":{"+ "\"name\": \""+ role +  "\"}}";
     }
 }
