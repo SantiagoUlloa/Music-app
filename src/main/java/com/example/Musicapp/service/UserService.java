@@ -2,18 +2,19 @@ package com.example.Musicapp.service;
 
 import com.example.Musicapp.models.User;
 import org.springframework.http.HttpStatus;
+import org.springframework.security.core.userdetails.UserDetailsService;
 
-public interface UserService {
+public interface UserService extends UserDetailsService{
 
     public User getUser(String username);
 
     public Iterable<User> listUsers();
 
-    public User createUser(User newUser);
+    public String createUser(User newUser);
 
-    public User login(String username, String password);
+    public String login(User user);
 
     public HttpStatus deleteById(Long userId);
 
-    public User addSong(String username, int songId);
+    public User addSong(String title, Long songId);
 }

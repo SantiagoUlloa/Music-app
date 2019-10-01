@@ -1,3 +1,5 @@
+package com.example.Musicapp.Controller;
+
 import javax.persistence.*;
 
 import java.util.List;

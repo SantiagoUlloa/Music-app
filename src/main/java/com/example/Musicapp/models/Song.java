@@ -12,10 +12,10 @@ public class Song {
     private int id;
 
     @Column
-    private String code;
+    private String name;
 
     @Column
-    private String name;
+    private int length;
 
     @ManyToMany(fetch = FetchType.LAZY,
             cascade = {CascadeType.DETACH,
@@ -39,13 +39,13 @@ public class Song {
         this.id = id;
     }
 
-    public String getCode() {
-        return code;
-    }
-
-    public void setCode(String code) {
-        this.code = code;
-    }
+//    public String getTitle() {
+//        return title;
+//    }
+//
+//    public void setTitle(String title) {
+//        this.title = title;
+//    }
 
     public String getName() {
         return name;
@@ -54,4 +54,8 @@ public class Song {
     public void setName(String name) {
         this.name = name;
     }
+
+    public int getLength(){return length;}
+
+    public void setLength(int length) {this.length = length;}
 }

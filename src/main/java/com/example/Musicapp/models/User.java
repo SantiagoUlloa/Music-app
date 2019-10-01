@@ -1,6 +1,8 @@
 package com.example.Musicapp.models;
 
-
+import com.example.Musicapp.models.Song;
+import com.example.Musicapp.models.UserProfile;
+import com.example.Musicapp.models.UserRole;
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 
@@ -55,7 +57,7 @@ public class User {
 
     public List<Song> getSongs(){ return songs; }
 
-    public void setSongs(List<Song> Songs) { this.songs = songs; }
+    public void setSongs(List<Song> songs) { this.songs = songs; }
 
     public UserRole getUserRole() { return userRole; }
 
