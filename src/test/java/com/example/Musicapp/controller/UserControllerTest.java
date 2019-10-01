@@ -81,7 +81,7 @@ public void signUp_Success() throws Exception{
     RequestBuilder requestBuilder = MockMvcRequestBuilders
             .post("/signup")
             .contentType(MediaType.APPLICATION_JSON)
-            .content(createUserwithRoleInJson("joe","abc", "admin"));
+            .content(createUserWithRoleInJson("joe","abc", "admin"));
 
     when(userService.createUser(any())).thenReturn("123456");
 
@@ -98,7 +98,7 @@ public void signUp_Success() throws Exception{
                 "\"password\":\"" + password+"\"}";
     }
 
-    private static String createUserwithRoleInJson (String name, String password, String role) {
+    private static String createUserWithRoleInJson (String name, String password, String role) {
         return "{ \"name\": \"" + name + "\", " +
                 "\"password\":\"" + password + "\"," +
                 "\"userRole\":{"+ "\"name\": \""+ role +  "\"}}";
