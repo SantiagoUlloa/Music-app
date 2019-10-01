@@ -89,9 +89,9 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public User addSong(String username, int songId) {
+    public User addSong(String name, int songId) {
         Song song = songRepository.findById(songId).get();
-        User user = getUser(username);
+        User user = getUser(name);
         user.addSong(song);
 
         return userRepository.save(user);
@@ -101,10 +101,6 @@ public class UserServiceImpl implements UserService {
     public HttpStatus deleteById(Long userId){
         userRepository.deleteById(userId);
         return HttpStatus.OK;
-    }
-
-    @Override
-    public User addSong(String title, Long songId) {
     }
 
 }
