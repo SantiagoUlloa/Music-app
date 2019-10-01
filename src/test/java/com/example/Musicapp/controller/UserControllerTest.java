@@ -74,15 +74,16 @@ public class UserControllerTest {
 //        mockMvc.perform(requestBuilder)
 //                .andExpect(status().isOk());
 //    }
+
 @Test
-public void createRole_Success() throws Exception{
+public void signUp_Success() throws Exception{
 
     RequestBuilder requestBuilder = MockMvcRequestBuilders
-            .post("/login")
+            .post("/signup")
             .contentType(MediaType.APPLICATION_JSON)
-            .content(createUserInJson("joe","abc"));
+            .content(createUserwithRoleInJson("joe","abc", "admin"));
 
-    when(userService.login(any())).thenReturn("123456");
+    when(userService.createUser(any())).thenReturn("123456");
 
     MvcResult result = mockMvc.perform(requestBuilder)
             .andExpect(status().isOk())
@@ -99,7 +100,7 @@ public void createRole_Success() throws Exception{
 
     private static String createUserwithRoleInJson (String name, String password, String role) {
         return "{ \"name\": \"" + name + "\", " +
-                "\"password\":\"" + password +
+                "\"password\":\"" + password + "\"," +
                 "\"userRole\":{"+ "\"name\": \""+ role +  "\"}}";
     }
 }
