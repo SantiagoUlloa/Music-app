@@ -43,4 +43,6 @@ public class UserServiceStub implements UserService {
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         return null;
     }
+
+
 }
