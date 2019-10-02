@@ -2,8 +2,10 @@ package com.example.Musicapp.service;
 
 import com.example.Musicapp.config.JwtUtil;
 import com.example.Musicapp.model.User;
+import com.example.Musicapp.model.UserRole;
 import com.example.Musicapp.repository.SongRepository;
 import com.example.Musicapp.repository.UserRepository;
+import com.example.Musicapp.repository.UserRoleRepository;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -24,11 +26,14 @@ public class UserServiceTest {
     @Mock
     UserRepository userRepository;
 
+//    @Mock
+//    UserRoleRepository userRoleRepository;
+
     @InjectMocks
     private UserServiceImpl userService;
 
-    @Mock
-    private UserRoleService userRoleService;
+//    @Mock
+//    private UserRoleService userRoleService;
 
     @Mock
     private SongService songService;
@@ -45,6 +50,9 @@ public class UserServiceTest {
     @InjectMocks
     private User user;
 
+//    @InjectMocks
+//    private UserRole userRole;
+
     public UserServiceTest() {
     }
 
@@ -53,6 +61,13 @@ public class UserServiceTest {
         user.setUsername("batman");
         user.setPassword("robin");
     }
+
+//    @Before
+//    public void initDummyUserRole(){
+//        userRole.setName("ROLE_ADMIN");
+//        user.setUserRole(userRole);
+//    }
+
 
     @Test
     public void getUser_ReturnsUser_Success(){
@@ -73,4 +88,14 @@ public class UserServiceTest {
 
         assertNull(token);
     }
+
+//    @Test
+//    public void getUserRole_ReturnsUser_Success(){
+//
+//        when(userRoleRepository.findByName(anyString())).thenReturn(userRole);
+//
+//        UserRole tempUser = userRoleService.getRole(userRole.getName());
+//
+//        assertEquals(tempUser.getName(), userRole.getName());
+//    }
 }

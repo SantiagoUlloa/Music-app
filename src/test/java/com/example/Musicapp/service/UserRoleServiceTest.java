@@ -13,6 +13,7 @@ import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
 import static org.mockito.ArgumentMatchers.anyString;
 import static org.mockito.Mockito.when;
 
@@ -54,6 +55,16 @@ public class UserRoleServiceTest {
         UserRole tempUser = userRoleServiceImpl.getRole(userRole.getName());
 
         assertEquals(tempUser.getName(), userRole.getName());
+    }
+
+    @Test
+    public void getUserRole_UserRoleNotFound_Error(){
+
+        when(userRoleRepository.findByName(anyString())).thenReturn(null);
+
+//        String token = userRoleService.getRole();
+
+//        assertNull();
     }
 
 }
