@@ -56,15 +56,4 @@ public class UserRoleServiceTest {
 
         assertEquals(tempUser.getName(), userRole.getName());
     }
-
-    @Test
-    public void getUserRole_UserRoleNotFound_Error(){
-
-        when(userRoleRepository.findByName(anyString())).thenReturn(null);
-
-//        String token = userRoleService.getRole();
-
-//        assertNull();
-    }
-
 }

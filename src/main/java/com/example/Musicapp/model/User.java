@@ -44,12 +44,11 @@ public class User {
 
     public User() {}
 
-    public List<Song> addSong(Song song){
+    public void addSong(Song song){
         if(songs == null)
             songs = new ArrayList<>();
         songs.add(song);
 
-        return songs;
     }
 
     public List<Song> getSongs(){ return songs; }

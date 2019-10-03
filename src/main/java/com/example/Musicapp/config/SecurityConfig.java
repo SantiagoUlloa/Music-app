@@ -30,6 +30,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
         auth.userDetailsService(userService);
     }
 
+    //sends out request for token
     @Autowired
     private JwtRequestFilter jwtRequestFilter;
 
@@ -39,7 +40,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
         http.csrf().disable()
                 .authorizeRequests()
                 .antMatchers("/signup/**", "/login/**").permitAll()
-                .antMatchers("/user/**", "/profile/**", "/course/**").authenticated()
+                .antMatchers("/user/**", "/profile/**", "/song/**").authenticated()
                 .antMatchers("/role/**").hasRole("DBA")
                 .and()
                 .httpBasic();

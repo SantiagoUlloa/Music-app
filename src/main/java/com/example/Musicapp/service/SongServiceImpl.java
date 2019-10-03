@@ -21,8 +21,9 @@ public class SongServiceImpl implements SongService {
     }
 
     @Override
-    public HttpStatus deleteById(Long songId) {
-        return null;
+    public HttpStatus deleteById(Integer songId) {
+        songRepository.deleteById(songId);
+        return HttpStatus.OK;
     }
 }
 

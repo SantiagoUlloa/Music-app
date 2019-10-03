@@ -8,6 +8,6 @@ public interface SongService {
 
     public Iterable<Song> listSongs();
 
-    public HttpStatus deleteById(Long songId);
+    public HttpStatus deleteById(Integer songId);
 
 }
