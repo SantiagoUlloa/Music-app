@@ -19,9 +19,9 @@ public class UserProfileServiceTest {
     public void createUserProfile_AddsProfile_Success(){
 
         UserProfile userProfile = new UserProfile();
-        userProfile.setEmail("batman@superhero.com");
+        userProfile.setEmail("batman1@superhero.com");
 
-        UserProfile newProfile = userProfileService.createUserProfile("batman", userProfile);
+        UserProfile newProfile = userProfileService.createUserProfile("batman1", userProfile);
 
         Assert.assertNotNull(newProfile);
         Assert.assertEquals(newProfile.getEmail(), userProfile.getEmail());
